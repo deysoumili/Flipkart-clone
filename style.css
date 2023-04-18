@@ -64,7 +64,7 @@ header .search .search-container input {
     padding: 0 8px;
     display: flex;
     justify-content: center;
-    align-items: c;
+    align-items: center;
     border: none;
     background-color: white;
     border-radius: 0 2px 2px 0;
@@ -96,7 +96,7 @@ header .more {
     height: 100%;
     display: flex;
     align-items: center;
-    margin:  0 20px;
+    margin: 0 20px;
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -149,7 +149,7 @@ header .cart svg {
         .section-2-container {
             margin-top: 16px;
             height: 280px;
-            background-image: url('https://rukminim1.flixcart.com/fk-p-flap/3376/560/image/0735712fe84c602d.jpg?q=50');
+            background-image: url('https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5d74b84bd8c0d3c3.jpg?q=50');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;            
@@ -173,7 +173,7 @@ header .cart svg {
         .section-4-offers {
             width: 230px;
             height:100% ;
-            background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90');
+            background-image: url('https://rukminim1.flixcart.com/flap/278/278/image/e84ecf024bdc49f4.jpg?q=90');
             background-position: bottom;
             background-repeat: no-repeat;
         }
@@ -240,6 +240,86 @@ header .cart svg {
             justify-content: space-between;
         }
         .section-5 img {
+            width: 33%;
+        }
+        .section-6-container {
+            margin-top: 8px;
+            height: 362px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         .section-6-offers {
+             width: 230px;
+             height:100% ;
+             background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90');
+             background-position: bottom;
+             background-repeat: no-repeat;
+         }
+         .section-6-offers-viewall {
+             margin-top: 132px;
+             width: 100%;
+             font-size: 30px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+         }
+         .section-6-offers-viewall button {
+             margin-top: 24px;
+             height: 40px;
+             background-color: var(--primary-color);
+             color: white;
+             box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+             padding: 10px 20px;
+             font-size: 14px;
+             font-weight: 500;
+             border: none;
+             border-radius: 2px;
+             cursor: pointer;            
+         }
+         .section-6-list {
+             height: 100%;
+             width: calc(100% - 230px);
+             display: flex;
+             overflow-x: auto;
+ 
+         }
+         .section-6-item {
+             width: 232px;
+             height: 100%;
+             padding: 0 15px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+         }
+         .section-6-item img {
+             max-width: 200px;
+             max-height: 200px;
+         }
+         .section-4-item-head {
+             margin-top: 16px;
+             font-size: 14px;
+             font-weight: 500;
+         }
+         .section-6-item-price {
+             margin-top: 12px;
+             font-size: 16px;
+             color: #388e3c;
+         }
+         .section-6-item-explore {
+             opacity: 0.6;
+             margin-top: 12px;
+             font-weight: 300;
+             font-size: 12px;
+         }
+         .section-5 {
+            margin-top: 8px ;
+            display: flex;
+            justify-content: space-between;
+        }
+        .section-7 img {
             width: 33%;
         }
         footer {
