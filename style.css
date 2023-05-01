@@ -166,6 +166,8 @@ header .cart svg {
 	height: 122px;
 	background-color: white;
 	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+	display: flex;
+    justify-content: center;
 }
 
 /* .section-1-container {
@@ -185,9 +187,9 @@ header .cart svg {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     /* made the contents centered */
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
 }
 
 .section-1-item {
@@ -433,6 +435,10 @@ footer {
     /* tablets */
 
     /* new additions */
+	.section-1-container{
+		overflow-x: scroll;
+		justify-content: flex-start;
+	}
     header .nav-container{
         display: flex;
         align-items: center;
