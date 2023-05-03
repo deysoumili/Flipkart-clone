@@ -496,6 +496,13 @@ footer {
     .section-4-list{
         width: 100%;
     }
+	.section-5{
+flex-direction: column;
+	}
+	.section-5 img{
+		width: 100%;
+		margin-top: 1rem;
+	}
 	.section-6-container{
 		margin-top: 8px;
         height: 362px;
@@ -523,6 +530,13 @@ footer {
 .section-6-list{
 	width: 100%;
 }
+.section-7{
+	flex-direction: column;
+		}
+		.section-7 img{
+			width: 100%;
+			margin-top: 1rem;
+		}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
