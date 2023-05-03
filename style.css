@@ -461,7 +461,10 @@ footer {
     header .nav-container .hamburger:hover{
         cursor: pointer;
     }
-
+    .section-2-container{
+		width: 100%;
+		height: 100%;
+    }
     .section-4-container{
         margin-top: 8px;
         height: 362px;
