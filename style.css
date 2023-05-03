@@ -419,9 +419,121 @@ footer {
 
 @media (max-width: 576px){
     /* mobile screens */
+	.section-1-container{
+		overflow-x: scroll;
+		justify-content: flex-start;
+	}
+    header .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+    header .nav-container .search{
+        display: none;
+    }
+    header .nav-container .login{
+        display: none;
+    }
+
+    header .nav-container .become-seller{
+        display: none;
+    }
+
+    header .nav-container .more{
+        display: none;
+    }
+
+    header .nav-container .cart{
+        display: none;
+    }
+
+    header .nav-container .hamburger {
+        display: block;
+    }
+
+    header .nav-container .hamburger:hover{
+        cursor: pointer;
+    }
+    .section-2-container{
+		width: 100%;
+		height: 100%;
+    }
+    .section-4-container{
+        margin-top: 8px;
+        height: 362px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-4-offers{
+        background-image: none;
+        width: 100%;
+        height: 10%;
+        margin: 1rem;
+    }
+
+    .section-4-offers-viewall{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .section-4-offers-viewall button{
+        margin-top: 0;
+    }
+
+    .section-4-list{
+        width: 100%;
+    }
+	.section-5{
+flex-direction: column;
+	}
+	.section-5 img{
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.section-6-container{
+		margin-top: 8px;
+        height: 362px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+	}
+	.section-6-offers{
+		background-image: none;
+        width: 100%;
+        height: 10%;
+        margin: 1rem;
+	}
+	.section-6-offers-viewall{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+}
+.section-6-offers-viewall button{
+	margin-top: 0;
+}
+.section-6-list{
+	width: 100%;
+}
+.section-7{
+	flex-direction: column;
+		}
+		.section-7 img{
+			width: 100%;
+			margin-top: 1rem;
+		}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 800px){
     /* tablets */
 
     /* new additions */
