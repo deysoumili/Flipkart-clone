@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,21 +21,25 @@ body {
 
 header {
 	background-color: var(--primary-color);
-	height: 56px;
+	height: 3.5rem;
 }
 
 header .nav-container {
 	display: flex;
 	align-items: center;
+    justify-content: center;
 	height: 100%;
-	max-width: 1248px;
+	max-width: 78rem;
 	margin: 0 auto;
 }
 
 header .nav-container .logo {
 	display: flex;
-	min-width: 137px;
 	justify-content: flex-end;
+}
+
+header .nav-container .hamburger{
+    display: none;
 }
 
 header .nav-container .logo img {
@@ -58,7 +63,7 @@ header .search .search-container {
 }
 
 header .search .search-container input {
-	width: calc(100% - 32px);
+	width: 100%;
 	height: 100%;
 	padding: 0 8px;
 	display: flex;
@@ -66,6 +71,8 @@ header .search .search-container input {
 	align-items: center;
 	border: none;
 }
+
+
 
 header .search .search-container button {
 	width: 36px;
@@ -88,12 +95,19 @@ header .login {
 }
 
 header .login button {
-	width: 122px;
+    height: 58%;
 	padding: 5px 40px;
 	font-size: 16px;
 	font-weight: 600;
 	color: var(--primary-color);
+    background-color: white;
+    border: none;
 }
+
+header .login button:hover{
+    cursor: pointer;
+}
+
 
 header .become-seller {
 	height: 100%;
@@ -101,24 +115,38 @@ header .become-seller {
 	align-items: center;
 	margin: 0 20px;
 	color: white;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
+}
+
+header .become-seller:hover{
+    cursor: pointer;
 }
 
 header .more {
-	height: 100%;
-	display: flex;
-	align-items: center;
-	margin: 0 20px;
-	color: white;
-	font-size: 16px;
-	font-weight: 500;
-}
-
-header .more svg {
-	margin-right: 8px;
-	rotate: -90deg;
-}
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  header .more:hover{
+    cursor: pointer;
+  }
+  
+  /* changed hover and transform */
+  header .more svg {
+    margin: 0 0.5rem;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  header .more:hover svg {
+    transform: rotate(90deg);
+  }
 
 header .cart {
 	height: 100;
@@ -138,15 +166,30 @@ header .cart svg {
 	height: 122px;
 	background-color: white;
 	box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+	display: flex;
+    justify-content: center;
 }
 
-.section-1-container {
+/* .section-1-container {
 	width: 1280px;
 	margin: 0 auto;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    overflow-x: auto;
+    changed overflow
+} */
+
+.section-1-container {
+    max-width: 1280px;
+    margin: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* made the contents centered */
+    /* overflow-x: scroll; */
 }
 
 .section-1-item {
@@ -158,6 +201,8 @@ header .cart svg {
 	gap: 4px;
 	font-size: 14px;
 	font-weight: 500;
+    margin: 0 1.8rem;
+    /* changed margin */
 }
 
 .section-1-item img {
@@ -167,22 +212,18 @@ header .cart svg {
 
 .section-2-container {
 	margin-top: 16px;
-	height: 280px;
-	background-image: url('https://rukminim1.flixcart.com/fk-p-flap/1688/280/image/5d74b84bd8c0d3c3.jpg?q=50');
-	background-size: cover;
+     height: 280px;
+	/* background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
+    /* image fluid */
 }
 
-.section-3-container {
-	margin-top: 8px;
-	height: 122px;
-	background-image: url('https://rukminim1.flixcart.com/fk-p-flap/2848/246/image/d56a3ed6d200038a.jpg?q=50');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+.section-2-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-
 .section-4-container {
 	margin-top: 8px;
 	height: 362px;
@@ -357,7 +398,7 @@ header .cart svg {
 	font-size: 12px;
 }
 
-.section-5 {
+.section-7 {
 	margin-top: 8px;
 	display: flex;
 	justify-content: space-between;
@@ -380,8 +421,122 @@ footer {
     /* mobile screens */
 }
 
-@media (min-width: 576px) and (max-width: 767px){
+@media screen and (max-width: 767px){
     /* tablets */
+
+    /* new additions */
+	.section-1-container{
+		overflow-x: scroll;
+		justify-content: flex-start;
+	}
+    header .nav-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+    header .nav-container .search{
+        display: none;
+    }
+    header .nav-container .login{
+        display: none;
+    }
+
+    header .nav-container .become-seller{
+        display: none;
+    }
+
+    header .nav-container .more{
+        display: none;
+    }
+
+    header .nav-container .cart{
+        display: none;
+    }
+
+    header .nav-container .hamburger {
+        display: block;
+    }
+
+    header .nav-container .hamburger:hover{
+        cursor: pointer;
+    }
+    .section-2-container{
+		width: 100%;
+		height: 100%;
+    }
+    .section-4-container{
+        margin-top: 8px;
+        height: 362px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-4-offers{
+        background-image: none;
+        width: 100%;
+        height: 10%;
+        margin: 1rem;
+    }
+
+    .section-4-offers-viewall{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .section-4-offers-viewall button{
+        margin-top: 0;
+    }
+
+    .section-4-list{
+        width: 100%;
+    }
+	.section-5{
+flex-direction: column;
+	}
+	.section-5 img{
+		width: 100%;
+		margin-top: 1rem;
+	}
+	.section-6-container{
+		margin-top: 8px;
+        height: 362px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+	}
+	.section-6-offers{
+		background-image: none;
+        width: 100%;
+        height: 10%;
+        margin: 1rem;
+	}
+	.section-6-offers-viewall{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+}
+.section-6-offers-viewall button{
+	margin-top: 0;
+}
+.section-6-list{
+	width: 100%;
+}
+.section-7{
+	flex-direction: column;
+		}
+		.section-7 img{
+			width: 100%;
+			margin-top: 1rem;
+		}
 }
 
 @media (min-width: 768px) and (max-width: 991px){
